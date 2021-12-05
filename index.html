@@ -1,0 +1,73 @@
+<html>
+
+<head>
+
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper blue">
+            <div class="container">
+                <a href="#" class="brand-logo center">Tracalorie</a>
+                <ul class="right">
+                    <li> <a href="#" class="clear-btn btn blue lighten-3">clear</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- Form Card -->
+        <div class="card">
+
+            <div class="card-content">
+                <span class="card-title">Add Meal</span>
+                <form class="col">
+                    <div class="row">
+
+                        <div class="input-field col s6">
+                            <input type="text" placeholder="Add Item" id="item-name">
+                            <label for="item-name"></label>
+                            <div class="invalid-fedback mt-5"></div>
+                        </div>
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="Add Calories" id="item-calories">
+                            <label for="item-calories"></label>
+                            <div class="invalid-feedback" style="padding: 20px;"> </div>
+                        </div>
+                        <div class="update">
+
+                        </div>
+                        <button class="add-btn btn blue darken-3"><i class="fa fa-plus"></i> Add Meal</button>
+
+                        <button class="back-btn btn grey pull-right"><i class="fa fa-chevron-circle-left back"></i> Back</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <p class="message" style="text-align: center; padding: 20px;"></p>
+        <br>
+        <!-- Calorie Count -->
+        <h3 class="center-align">Total Calories: <span class="total-calories">0</span></h3>
+
+        <!-- Item List -->
+        <ul id="item-list" class="collection">
+
+        </ul>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+
+
+</html>
